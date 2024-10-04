@@ -4,6 +4,9 @@
 ![Hedera Testnet Account Creation](/img/img1.png)
 
 
+![Metamask Wallet Creation and Linking](/img/img2.png)
+
+
 # Installing Node.js
 
 ## Requirements
