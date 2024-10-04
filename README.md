@@ -1,4 +1,10 @@
-# Initial Setup
+
+# Creating Hedera Testnet Account, Metamask Wallet, and Linking Them
+
+![Hedera Testnet Account Creation](/img/img1.png)
+
+
+# Installing Node.js
 
 ## Requirements
 - powershell v.3 (or above), winget for Windows
