@@ -69,7 +69,7 @@ The last two commands must return versions >= 10.8.2 (npm) and >= 20.17.0 (node)
 
 
 
-# Giveback-dapp
+# Example Full Stack Dapp: Giveback-dapp
 
 
 
