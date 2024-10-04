@@ -124,6 +124,9 @@ Giveback-dapp is a decentralized fundraising application built using the Hedera 
    npx hardhat run scripts/deployContract.js --network hedera
    ```
 
+##### Note: The contract will be deployed to an address. This is the contract address. Make a note of it.
+
+
 - ### Step 4: Add Contract Address to Backend
 
    1. Open the `index.js` file in the **backend** directory.
