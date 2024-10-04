@@ -1,0 +1,742 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap);
+
+*, 
+*::after,
+
+*::before{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size:62.5%;
+    line-height:1.6;
+    overflow-x: hidden;
+
+}
+
+body{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-stretch: condensed;
+    font-weight:400;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#root{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar{
+    height: 8rem;
+    /* background-color: red; */
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    /* background-color: #d80032; */
+    border-color:#d80032 ;
+    display: inline-block;
+    /* padding: 5px; */
+    width: 50px;
+    height: 50px;
+    /* border-radius: 4px; */
+}
+
+.logo-text{
+    font-size: 25px;
+    color: #d80032 ;;
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    min-height: calc(100vh - 12rem);
+    margin-bottom: 30px;
+}
+.navbar-right .nav-link{
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.nav-link-button{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.row{
+    max-width:114rem;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.btn-special{
+    display: inline-block;
+    background-color: #d80032;
+    color: #fff;
+    text-decoration: none;
+    font-size:1.6rem;
+    transition: all .2s;
+    padding:1rem 2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none; /* Remove the border */
+}
+.btn-special:hover,
+.btn-special:active{
+    transform: scale(1.05);
+}
+
+
+.input-box input{
+    width: 100%;
+    font-size: 2rem;
+    padding:1.5rem;
+    border:1px solid #ced4da;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+
+.input-box button{
+    display: inline-block;
+    background-color: #d80032;
+    color: #fff;
+    text-decoration: none;
+    font-size:2rem;
+    padding:1rem 2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.home{
+    margin-left:7%;
+    margin-right:7%;
+}
+
+/* .main{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+.home-heading{
+    font-size:20px;
+    margin-top:50px;
+}
+
+.horizantalLine{
+    border: 1px solid #000;
+}
+
+.spinner{
+    margin-left:40%;
+    margin-top: 100px;
+
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top:20px;
+  }
+  
+  .button-tab {
+    border-radius: 8px;
+    padding: 10px 20px; 
+    border: none; 
+    background-color: rgb(214, 214, 214); 
+    color: white; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    margin-right:10px;
+    color: black
+  }
+  
+  .tabs button.active {
+    border-bottom: 2px solid #d80032;
+    background-color: #e0e0e0;
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px  auto ;
+  }
+  
+  .campaign-card {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+
+  .footer{
+    height: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .footer p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+
+   .fund-card {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    max-width: 288px;
+    border-radius: 15px;
+    background-color: #fff; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  .fund-card-img-container {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .fund-card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .fund-card-content {
+    padding: 16px;
+    color: #333; 
+  }
+  
+  .fund-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  
+  .fund-card-tag {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+  }
+  
+  .fund-card-header p {
+    margin-left: 12px;
+    font-size: 12px;
+    color: #d80032; 
+  }
+  
+  .fund-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333; 
+    margin: 0;
+  }
+  
+  .fund-card-description {
+    font-size: 14px;
+    color: #666; 
+    margin-top: 5px;
+  }
+  
+  .fund-card-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .fund-card-stats div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fund-card-stats h4 {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .fund-card-stats p {
+    font-size: 12px;
+    color: #666; 
+    margin-top: 3px;
+  }
+  
+  .fund-card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+  }
+  
+  .fund-card-footer-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d80032; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fund-card-footer-img img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+  
+  .fund-card-footer p {
+    font-size: 12px;
+    color: #333; 
+  }
+  
+  .fund-card-footer span {
+    color: #d80032; 
+  }
+
+  .fund-card-owner-box {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 0.875rem;
+    color: #4b5563;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  .campaign-details-container {
+    display: flex;
+    padding: 20px;
+}
+
+.campaign-image-container {
+    width: 50%;
+   
+    margin-right: 20px;
+}
+
+.no-campaigns {
+  font-size: 24px;
+  text-align: center; 
+  margin: 50px 0; 
+  color: #d80032; 
+  font-weight: bold; 
+}
+
+.campaign-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 450px;
+}
+
+.progress-bar-background {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background-color: #d80032;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.count-box-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.count-box {
+    background-color: #f9f9f9;
+    padding: 15px; 
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px; 
+}
+
+.count-title {
+    font-size: 14px; 
+    font-weight: 600;
+    color: #333;
+}
+
+.count-value {
+    font-size: 22px; 
+    font-weight: bold;
+    color: #d80032;
+}
+
+.details-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; 
+}
+
+.details-left, .details-right {
+    width: 48%;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.story-description {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    line-height: 1.6; 
+    font-size: 16px; 
+}
+
+.donators-list {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.donator-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px; 
+    font-size: 14px;
+}
+
+.no-donators {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.donator-address {
+    font-weight: 600;
+}
+
+.donator-amount {
+    color: #d80032;
+    margin-left: 10px; 
+}
+
+.fund-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.fund-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-section {
+    margin-top: 10px;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.back-it-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.back-it-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.back-it-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.fund-button {
+    background-color: #d80032;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fund-button:hover {
+    background-color: #b50029;
+}
+
+.loader {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* my campaigns page*/
+.my-campaigns-container {
+  padding: 20px;
+}
+
+.my-campaigns-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.campaigns-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.campaign-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  width: calc(33% - 20px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.campaign-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.campaign-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.campaign-target, .campaign-collected {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/** campaign **/
+.campaign-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: calc(25% - 20px); 
+}
+
+.campaign-card:hover {
+  transform: scale(1.02);
+}
+.campaign-card-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.campaign-card-content {
+  padding: 15px;
+}
+
+.campaign-card-header {
+  margin-bottom: 10px;
+}
+
+.campaign-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.campaign-card-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.campaign-card-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.campaign-card-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+/** My donations **/
+
+.my-donations-container {
+  padding: 20px;
+}
+
+.my-donations-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.donations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.donation-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  width: calc(25% - 20px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.donation-card:hover {
+  transform: scale(1.02);
+}
+
+
+.donation-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.donation-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.donation-amount, .donation-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.view-campaign-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #d80032;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.view-campaign-link:hover {
+  background-color: #b50029;
+}
+
+
+/***/
+.create-campaign-container {
+  padding: 20px;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
+.create-campaign-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+.input-box label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333; 
+}
+  
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-box textarea {
+  resize: vertical; 
+}
+
+.input-box button {
+  background-color: #d80032;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #b50029;
+}
