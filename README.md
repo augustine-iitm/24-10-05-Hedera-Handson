@@ -146,7 +146,7 @@ Giveback-dapp is a decentralized fundraising application built using the Hedera 
 
    1. Navigate to the `web3/artifacts/contracts/crowdFunding.sol/CrowdFunding.json` file in the `web3` folder.
    2. Copy the **ABI** section from this JSON file.
-   3. Create a new file in the **backend** directory called `abi.js`.
+   3. Open the file in the **backend** directory called `abi.js`.
    4. Paste the copied **ABI** into this `abi.js` file. Ensure that you copy everything inside the square brackets excluding the square brackets themselves.
 
    You can refer to a sample `abi.js` file already available in the repository for guidance on how to format and structure this file.
