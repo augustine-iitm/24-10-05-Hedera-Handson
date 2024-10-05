@@ -88,6 +88,8 @@ Giveback-dapp is a decentralized fundraising application built using the Hedera 
 
 ## Steps to Deploy and Run the Project
 
+- ### Step 0: Download this github project into a fresh folder. (Unzip it if you downloaded it in zipped form.)
+
 - ### Step 1: Install Dependencies
 
    1. Navigate to the `web3` directory and install the necessary dependencies:
